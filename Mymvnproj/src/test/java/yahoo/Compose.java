@@ -21,6 +21,7 @@ public class Compose
 	}
 	public void sendmail() throws Exception
 	{
+		System.out.println("compose mail");
 		driver.findElement(By.xpath("//input[@class='composeicon']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.id("to")).sendKeys("abcd@gmail.com");
